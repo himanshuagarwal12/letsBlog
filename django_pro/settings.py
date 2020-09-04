@@ -23,11 +23,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '+pcz*m(eqsnye3+n9&wj*ips!!_nl)+wjj^ykxd()193wz)aj-'
 
 # SECURITY WARNING: don't run with debug turned on in production!
+SECRET_KEY=os.environ.get('SECRET_KEY')
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
-
+ALLOWED_HOSTS = ['letsblogg.herokuapp.com']
 # Application definition
 
 INSTALLED_APPS = [
